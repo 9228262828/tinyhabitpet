@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Privacy Policy for Tiny Habit Pet.">
+  <title>Privacy Policy - Tiny Habit Pet</title>
+  <style>
+:root {
+  color-scheme: light dark;
+  --bg: #fff8ea;
+  --surface: rgba(255,255,255,.88);
+  --surface-dark: #2b2520;
+  --text: #2b251f;
+  --muted: #776b61;
+  --green: #77a83b;
+  --green-dark: #4c742c;
+  --orange: #ff8a2a;
+  --coral: #ff6b72;
+  --gold: #ffc857;
+  --border: rgba(77,54,37,.12);
+  --shadow: 0 24px 70px rgba(74,48,25,.12);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 10% 0%, rgba(255,200,87,.26), transparent 32%),
+    radial-gradient(circle at 95% 8%, rgba(119,168,59,.20), transparent 30%),
+    linear-gradient(180deg, #fffaf1 0%, var(--bg) 100%);
+  color: var(--text);
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  line-height: 1.75;
+}
+a { color: var(--green-dark); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.shell { width: min(980px, calc(100% - 32px)); margin: 0 auto; }
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(16px);
+  background: rgba(255,248,234,.86);
+  border-bottom: 1px solid var(--border);
+}
+.nav-inner {
+  min-height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: var(--text);
+  font-weight: 900;
+}
+.brand-mark {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  background: linear-gradient(145deg, var(--orange), #ffb35f);
+  box-shadow: 0 8px 22px rgba(255,138,42,.30);
+}
+.nav-links { display: flex; flex-wrap: wrap; gap: 18px; }
+.hero { padding: 84px 0 46px; text-align: center; }
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(119,168,59,.12);
+  color: var(--green-dark);
+  font-weight: 800;
+}
+h1 {
+  margin: 20px auto 12px;
+  max-width: 780px;
+  font-size: clamp(38px, 7vw, 72px);
+  line-height: 1.05;
+  letter-spacing: -2px;
+}
+.hero p { max-width: 690px; margin: 0 auto; color: var(--muted); font-size: 18px; }
+.actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 20px;
+  border-radius: 16px;
+  font-weight: 900;
+  background: var(--green);
+  color: white;
+  box-shadow: 0 12px 30px rgba(119,168,59,.25);
+}
+.button.secondary {
+  background: white;
+  color: var(--text);
+  border: 1px solid var(--border);
+  box-shadow: none;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  padding: 26px 0 70px;
+}
+.card, main {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 26px;
+  box-shadow: var(--shadow);
+}
+.card { padding: 24px; }
+.card-icon {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border-radius: 15px;
+  background: rgba(255,138,42,.14);
+  font-size: 24px;
+}
+.card h2 { margin: 14px 0 6px; font-size: 20px; }
+.card p { margin: 0; color: var(--muted); }
+main { margin: 52px auto 70px; padding: clamp(24px, 5vw, 50px); }
+main h1 { margin: 0 0 8px; font-size: clamp(34px, 6vw, 56px); }
+main h2 {
+  margin-top: 32px;
+  margin-bottom: 8px;
+  font-size: 22px;
+  color: var(--green-dark);
+}
+main p, main li { color: var(--muted); }
+.notice {
+  margin: 22px 0;
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(119,168,59,.10);
+  border: 1px solid rgba(119,168,59,.20);
+}
+footer {
+  padding: 26px 0 44px;
+  color: var(--muted);
+  text-align: center;
+}
+@media (max-width: 760px) {
+  .grid { grid-template-columns: 1fr; }
+  .nav-inner { align-items: flex-start; padding: 14px 0; flex-direction: column; }
+  .nav-links { gap: 12px; }
+  .hero { padding-top: 56px; }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1e1a17;
+    --surface: rgba(43,37,32,.94);
+    --text: #fff7eb;
+    --muted: #d2c5b9;
+    --border: rgba(255,255,255,.10);
+    --shadow: 0 24px 70px rgba(0,0,0,.24);
+  }
+  body {
+    background:
+      radial-gradient(circle at 10% 0%, rgba(255,138,42,.13), transparent 32%),
+      radial-gradient(circle at 95% 8%, rgba(119,168,59,.13), transparent 30%),
+      var(--bg);
+  }
+  nav { background: rgba(30,26,23,.88); }
+  .button.secondary { background: var(--surface-dark); color: var(--text); }
+  a { color: #a9d66f; }
+  main h2 { color: #a9d66f; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="shell nav-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">🦊</span>
+      <span>Tiny Habit Pet</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-conditions.html">Terms</a>
+      <a href="support.html">Contact Us</a>
+    </div>
+  </div>
+</nav>
+
+<main class="shell">
+  <h1>Privacy Policy</h1>
+  <p><strong>Last updated:</strong> July 25, 2026</p>
+
+  <div class="notice">
+    Tiny Habit Pet is designed to work offline. The application does not require
+    registration, login, or the creation of a user account.
+  </div>
+
+  <h2>1. Introduction</h2>
+  <p>
+    This Privacy Policy explains how Tiny Habit Pet handles information when you
+    use the application. We are committed to protecting user privacy and keeping
+    the app simple, transparent, and secure.
+  </p>
+
+  <h2>2. Information We Collect</h2>
+  <p>
+    Tiny Habit Pet does not collect, transmit, sell, rent, or share personal
+    information. The app does not ask for your name, email address, phone number,
+    precise location, contacts, photos, camera, microphone, payment details,
+    advertising identifier, or social-media information.
+  </p>
+
+  <h2>3. No Account or Registration</h2>
+  <p>
+    The app does not require an account, registration, login, password, or online
+    profile. You can use the main features without providing personal information.
+  </p>
+
+  <h2>4. Local Data Storage</h2>
+  <p>
+    Tiny Habit Pet stores limited app information locally on your device. This may
+    include habits, completion history, streaks, pet progress, levels, coins,
+    achievements, preferences, and settings.
+  </p>
+  <p>
+    This information is stored using standard local device storage and is not sent
+    to an external server. Clearing the app's data or uninstalling the application
+    may permanently remove locally stored progress.
+  </p>
+
+  <h2>5. Internet Connection</h2>
+  <p>
+    Tiny Habit Pet is designed to operate offline and does not require an internet
+    connection for its core features. The app does not connect to a private backend
+    server for storing user progress.
+  </p>
+
+  <h2>6. Advertising, Analytics, and Tracking</h2>
+  <p>
+    The app does not include third-party advertising, advertising SDKs, analytics
+    SDKs, cross-app tracking, behavioral profiling, or targeted advertising.
+  </p>
+
+  <h2>7. Third-Party Services</h2>
+  <p>
+    Tiny Habit Pet does not use Firebase, cloud databases, cloud storage, social
+    login, remote user profiles, or third-party analytics services.
+  </p>
+
+  <h2>8. Device Permissions</h2>
+  <p>
+    The current version does not require access to sensitive device permissions
+    such as contacts, precise location, camera, microphone, photos, or files.
+    Basic haptic feedback may be used when enabled in the app settings.
+  </p>
+
+  <h2>9. Children's Privacy</h2>
+  <p>
+    Tiny Habit Pet does not knowingly collect personal information from children
+    or adults. The app contains no chat, public profiles, user-generated content,
+    online multiplayer, social interaction, or direct messaging.
+  </p>
+
+  <h2>10. Data Security</h2>
+  <p>
+    Because the app does not collect or transmit personal information to external
+    servers, personal user data is not maintained in an online database. Local
+    information is protected by the normal security features of your device and
+    operating system.
+  </p>
+
+  <h2>11. Data Retention and Deletion</h2>
+  <p>
+    Local app data remains on the device until it is removed through the app's reset
+    feature, the operating system's clear-data option, or application uninstallation.
+  </p>
+
+  <h2>12. Your Choices</h2>
+  <p>
+    You may enable or disable sound effects, haptic feedback, and dark mode from the
+    Settings screen. You may also reset local progress from inside the application.
+  </p>
+
+  <h2>13. Changes to This Privacy Policy</h2>
+  <p>
+    This Privacy Policy may be updated when app features, legal requirements, or
+    privacy practices change. The latest version will remain available on this page
+    and may also be included inside the application.
+  </p>
+
+  <h2>14. Contact Us</h2>
+  <p>
+    For questions, concerns, or requests related to this Privacy Policy, please use
+    the Contact Us information provided on the application's official store listing
+    or support page.
+  </p>
+</main>
+
+<footer>
+  <div class="shell">
+    <p>© 2026 Tiny Habit Pet. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
