@@ -31,7 +31,7 @@ class PrivacyScreen extends StatelessWidget {
         ),
         (
           'Contact',
-          'For privacy questions, contact ${AppConstants.supportEmail}.',
+          'For privacy questions, contact US.',
         ),
       ],
     );

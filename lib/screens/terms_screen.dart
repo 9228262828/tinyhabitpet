@@ -30,7 +30,7 @@ class TermsScreen extends StatelessWidget {
         ),
         (
           'Contact',
-          'For support or legal questions, contact ${AppConstants.supportEmail}.',
+          'For support or legal questions, contact US.',
         ),
       ],
     );
